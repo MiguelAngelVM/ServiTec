@@ -1,0 +1,44 @@
+.button-submit-comment {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    background: url('../../img/form-button-white-25px.png') repeat-x scroll center top transparent;
+    border: 1px solid #47AE8F;
+    color: #233b4b;
+    background-color: #255372;
+    border-color: #A5CAE4;
+    cursor: pointer;
+    width: 200px;
+}
+#estatico{
+    display: block;
+    height: 5em;
+    width: 100%;
+    position: fixed;
+    z-index: 11;
+    background: url(../../img/101.jpg) 50% 42%;
+    box-shadow: 0, 0, 20px rgba(0,0,0,0.4)
+   
+    
+}
+#divNew{
+    float: right;
+    top: -4em;
+    width: 200px;
+    margin-right: 5%;
+}
+#divLogo{
+    width: 98px;
+    float: left;
+    margin-left: 5%;
+  
+}
+#divSamsumg{
+    width: 250px;
+}
+#salir{
+    float: right;
+    margin-top: -1.7em;
+    width: 200px;
+    margin-right: 5%;
+}}

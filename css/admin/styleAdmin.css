@@ -1,0 +1,255 @@
+﻿article, figcaption, figure, footer, hgroup, nav, section{
+    display: block;
+}
+body {
+    font-size: 1em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    padding-top:-2px;
+    background-color: #7eaee5;
+    font-family: "quicksandregular", sans-serif;
+    font-weight: bolder;
+}
+
+section div {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+.product {
+    background: #d1d1d1;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid;
+    border-radius:5px;
+    display: block;
+    text-align: left;
+}
+
+#photo {
+    padding: 20px;
+    width: 120px;
+    border-radius: 30px;
+    margin-right: 15px;
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+}
+
+#vistaAdminIndex {
+    background-color: #7eaee5;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 0px 1px 60px 1px #000;
+    margin: 10px;
+    margin-top: 50px;
+    width: 80%;
+}
+
+div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+article {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.notificacionesClass { /* Es el que contiene el usuario y el mensaje */
+    margin-left: 20px;
+    margin-bottom: 40px;
+    text-align: justify;
+    display: inline-block;
+    text-align: center;
+}
+
+#notificacionesId {/* Es para el mensaje */
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #000;
+    margin: 5px;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    width: 120px;
+}
+
+#tituloContenedor {
+    display: inline-block;
+    font-size: 250%;
+    margin-top: 5%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#contenedor { /* Agrupa el contenedor 1 y 2 */
+    align-items: center;
+    display: inline-block;
+    margin-bottom: 50px;
+    max-width: 98%;
+    text-align: center;
+}
+
+#contenedor1 {
+    display: inline-block;
+    margin: 20px;
+    vertical-align: middle;
+    width: 96%;
+}
+
+#contenedor2 {
+    background: #d9d9d9;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0px 1px 60px 1px #000;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    max-height: 100%;
+    float: right;
+    width: 75%;
+}
+
+h1 {
+    color: red;
+}
+/* ADMIN > FORMULARIO */
+#contenedorFormas {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bolder;
+    vertical-align: top;
+    padding: 20px;
+    
+}
+/* CONFIGURA EL TAMAÑO DE LAS CAJAS DE TEXTO ADMIN > FORMULARIOS */
+p input {
+    width: 250px;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 3px;
+    margin-bottom: 30px;
+}
+
+#btnAgregar {
+    float: right;
+    font-size: 15px;
+    height: 25px;
+    margin-top: 10px;
+    padding: 3px;
+    text-align: center;
+    width: auto;
+}
+
+#tituloFormulario {
+    font-size: 50px;
+    display: inline-block;
+}
+
+#checkbox {
+    text-align: left;
+    float: left;
+    margin: 50px;
+    font-size: 18px;
+}
+
+.checkboxClass {
+    margin-top: 8px;
+}
+#todo{
+    position: relative;
+    top: 4.3em;
+    
+}
+img, video{
+    max-width: 100%;
+    border-radius: 0.5em;
+}
+
+#tablaReportes {
+    align-items: center;
+    margin: 30px;
+}
+/*  C S S   P A R A   M E N Ú */
+#menu {
+    align-content: center;
+    align-items: center;
+    display: inline-block;
+    margin-top: 95px;
+    padding: 0px;
+    max-width: 80%;
+    text-align: center;
+    padding-right: 35px;
+}
+
+#menu nav {
+    border: none;
+    margin: 0px;
+    padding: 0;
+}
+
+#menu nav {
+    background: none;
+    text-align: center;
+    display: inline-block;
+}
+
+#menu nav ul {
+    list-style: none;
+}
+
+#menu nav ul li {
+    display:inline-block;
+    position: relative;
+}
+/*aqui cambias los colores del menu*/
+#menu nav ul li a {
+    background: #71aef4;
+    border: 2px solid #70a7e6;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bolder;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.38);
+    transition: .8s ease;
+    z-index 100;
+}
+
+#menu nav ul li a:hover {
+    color: #000;
+    background-color: #e7ebf0;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.63);
+    transition: .5s ease;
+    transform: scale(1.1);
+}
+
+#menu nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding-bottom: 12px;/* Espaciado interno de los botones menú */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 12px;  /* - - - - - - - - - - - - - - - -*/
+}
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
+aside {
+    background: #d9d9d9;
+    box-shadow: 0px 1px 60px 1px #000;
+    color: #000;
+    float: left;
+    margin-top: 60px;
+    padding: 10px;
+    width: 20%;
+    height: 600px;
+}

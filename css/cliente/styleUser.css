@@ -1,0 +1,258 @@
+body {
+    font-size: 1em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    padding-top:-2px;
+    background-color: #7eaee5;
+    font-family: "quicksandregular", sans-serif;
+    font-weight: bolder;
+}
+
+
+article {
+    display: inline-block;
+    overflow: hidden;
+}
+
+aside {
+    background: #d9d9d9;
+    /* sombra del aside*/
+    box-shadow: 0px 1px 60px 1px rgba(0, 0, 0, 0.87);
+    color: #000;
+    float: left;
+    margin-left: 2%;
+    margin-top: 120px;
+    margin-bottom: 2%;
+    padding: 1%x;
+    width: 25%;
+    height: 400px;
+}
+
+h2 {
+    float: left;
+}
+
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('../../fonts/quicksand-regular-webfont.eot');
+    src: url('../../fonts/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/quicksand-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/quicksand-regular-webfont.woff') format('woff'),
+         url('../../fonts/quicksand-regular-webfont.ttf') format('truetype'),
+         url('../../fonts/quicksand-regular-webfont.svg#quicksandregular') format('svg');
+    font-weight: normal;
+    font-style:normal;
+}
+
+#photoUser {
+    width: 80px;
+    border-radius: 5px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.datosUsuario {
+    display: inline-block;
+    position: relative;
+    margin-left: 3%;
+}
+
+/* Sección del 3er div -CHAT CON ADMIN- */
+nav {
+    background: #d9d9d9;
+    border: 2px solid;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    padding: 5px;
+    text-align: left;
+}
+
+.photo_ico {
+    width: 35px;
+    vertical-align:middle;
+}
+/* Input para publicar */
+nav input { 
+    font-size: 15px;
+    margin: 0;
+    padding: 5px;
+    width: 80%;
+}
+#estado {
+    font-size: 22px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.63);
+}
+
+#vistaUser {
+    margin: 0;
+    width: 100%;
+    padding: 5px;
+}
+/* - - - -  - - - - - */
+
+#botones {
+    text-align: center;
+    padding: 3px;
+    margin: 0;
+    width: auto;
+    height: 25px;
+    font-size: 15px;
+}
+
+/* Define los campos en letras negritas */
+span {
+    font-style: italic;
+}
+/* contenedor de productos registrados*/
+section {
+    background: #7eaee5;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-top: 1px solid;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: -20px;
+    height: 1000px;
+}
+
+progress {
+    background: #fff;
+    max-width: 100%;
+}
+
+#divBoton-Img {
+    display: inline-block;
+}
+
+#div-Img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#div-Boton {
+    display: inline-block;
+}
+
+#sesion {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+}
+ 
+#contenedorPrincipal {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100%;
+}
+/* esto es lo de los comentarios */
+#contenedorUser {
+    background-color: #7eaee5;
+    border-radius: 10px;
+    box-shadow: 0px 1px 60px 1px #000;
+    display: inline-block;
+    height: 40%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 60%;
+}
+
+#verificarDato {
+    display: inline-block;
+    margin-top: 
+}
+
+
+
+
+img, video{
+max-width: 100%;
+border-radius: 0.5em;
+}
+
+/*  C S S   P A R A   M E N Ú */
+#menu {
+    align-content: center;
+    align-items: center;
+    display: inline-block;
+    margin-top: 95px;
+    padding: 0px;
+    max-width: 80%;
+    text-align: center;
+    padding-right: 35px;
+}
+
+#menu nav {
+    border: none;
+    margin: 0px;
+    padding: 0;
+}
+
+#menu nav {
+    background: none;
+    text-align: center;
+    display: inline-block;
+}
+
+#menu nav ul {
+    list-style: none;
+}
+
+#menu nav ul li {
+    display:inline-block;
+    position: relative;
+}
+/*aqui cambias los colores del menu*/
+#menu nav ul li a {
+    background: #71aef4;
+    border: 2px solid #70a7e6;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bolder;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.38);
+    transition: .8s ease;
+    z-index 100;
+}
+
+#menu nav ul li a:hover {
+    color: #000;
+    background-color: #e7ebf0;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.63);
+    transition: .5s ease;
+    transform: scale(1.1);
+}
+
+#menu nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding-bottom: 12px;/* Espaciado interno de los botones menú */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 12px;  /* - - - - - - - - - - - - - - - -*/
+}
+#divFolio{
+    position: relative;
+    float: right;
+    top: 8.5em;
+    right: 3%;
+}
+#h1Prod{
+    position: relative;
+    width: 87%;
+    
+}
+#hora{
+    text-align: right;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - */

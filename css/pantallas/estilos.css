@@ -1,0 +1,14 @@
+@media(max-width: 900px){
+    
+    #divSamsumg{
+        display: none;
+    }
+    #divNew{
+       position: static;
+    }
+}
+@media(max-width: 500px){
+    #divLogo{
+       display: none;
+    }
+}
