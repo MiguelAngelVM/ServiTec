@@ -1,7 +1,7 @@
 <?php //Conección a la BDD
 $con = mysql_connect('localhost','root',''); //Usuario y contraseña parala BDD
-		mysql_select_db('ServiTec',$con); //seleccionamos la BDD
-		
+		mysql_select_db('servitec',$con); //seleccionamos la BDD
+
 if (mysql_error()) { //De no conectar mostramos un error
 echo "Error en la conección";
 }
@@ -19,20 +19,14 @@ if($rowAdmin = mysql_fetch_array($resultAdmin)) {
      $result2 = mysql_query("SELECT idUsuario  FROM user WHERE username  = '" . $usuario . "' AND passw = '" . $contra . "'",$con)
 	or die("Error en: $result2: " . mysql_error());
         $row = mysql_fetch_array($result2);
-            
+
         $_SESSION["autentificadoAdmin"]=true;
         $_SESSION["id"]=$row['idUsuario'];
         $_SESSION["nombre"]=$usuario;
         $pantallas = "html/admin/admin-index.php";
-        
-     
-     
-   /* $tarea = array(
-	$_SESSION["id"],
-	$_SESSION["nombre"],
-	"tarea 3");*/
-     
-     echo json_encode( $pantallas);   
+
+
+     echo json_encode( $pantallas);
 
 }
 }
@@ -47,12 +41,12 @@ if($rowUser = mysql_fetch_array($resultUser)) {
      $result2 = mysql_query("SELECT idUsuario  FROM user WHERE username  = '" . $usuario . "' AND passw = '" . $contra . "'",$con)
 	or die("Error en: $result2: " . mysql_error());
         $row = mysql_fetch_array($result2);
-            
+
         $_SESSION["autentificadoUser"]=true;
         $_SESSION["id"]=$row['idUsuario'];
         $_SESSION["nombre"]=$usuario;
         $pantallas = "html/cliente/usuario-index.php";
-     echo json_encode( $pantallas);   
+     echo json_encode( $pantallas);
 
 }
 }
@@ -67,15 +61,18 @@ if($rowEmp = mysql_fetch_array($resultEmp)) {
      $result2 = mysql_query("SELECT idUsuario  FROM user WHERE username  = '" . $usuario . "' AND passw = '" . $contra . "'",$con)
 	or die("Error en: $result2: " . mysql_error());
         $row = mysql_fetch_array($result2);
-            
+
         $_SESSION["autentificadoEmp"]=true;
         $_SESSION["id"]=$row['idUsuario'];
         $_SESSION["nombre"]=$usuario;
         $pantallas = "html/empleado/empleado-index.php";
-     echo json_encode( $pantallas);   
+     echo json_encode( $pantallas);
 
 }
 }
-
+if($rowAdmin['accesoAdmin'] == 0 && $rowUser['accesoUser'] == 0 && $rowEmp['accesoEmp'] == 0) {
+$incorrecto = "Usuario o Contraseña incorrecta";
+echo json_encode( $incorrecto);
+}
 mysql_close($con);
 ?>

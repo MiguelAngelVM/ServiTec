@@ -19,25 +19,46 @@ var mostrarFolio = function(){
             "<div id='contenedor2'>" +
                "<div id='contenedorFormas'>" +
                    "<p>" + "Folio:" + "<br/>" +
-                   "<input type='text' id='folio' placeholder='Ejem: Francisco'>" + "</p>" +
+                   "<input type='text' id='folioE' placeholder='Ejem: feb1001' >" + "</p>" +
                    "<p>" + "Marca:" + "<br/>" +
-                   "<input type='text' id='marca' placeholder='Ejem: Samsung'>" + "</p>" +
+                   "<input type='text' id='marcaE' placeholder='Ejem: Samsung'>" + "</p>" +
                    "<p>" + "Serie:" + "<br/>" +
-                   "<input type='text' id='serie' placeholder='Ejem: 20080'>" + "</p>" +
+                   "<input type='text' id='serieE' placeholder='Ejem: 20080'>" + "</p>" +
                    "<p>" + "Producto:" + "<br/>" +
-                   "<input type='text' id='producto' placeholder='Ejem: Televisor'>" + "</p>" +
+                   "<input type='text' id='productoE' placeholder='Ejem: Televisor'>" + "</p>" +
                "</div>" +
                "<div id='contenedorFormas'>" +
                   "<p>" + "Modelo:" + "<br/>" +
-                   "<input type='text' id='modelo' placeholder='Ejem: 5520'>" + "</p>" +
+                   "<input type='text' id='modeloE' placeholder='Ejem: 5520'>" + "</p>" +
                    "<p>" + "Costo:" + "<br/>" +
-                   "<input type='text' id='costo' placeholder='Ejem: Televisor'>" + "</p>" +
+                   "<input type='number' id='costoE' placeholder='Ejem: Televisor'>" + "</p>" +
                    "<p>" + "F. Entrega:" + "<br/>" +
                    "<input type='date'>" + "</p>" +
                    "<p>" + "</p>" +
-                   "<input type='submit' id='agregar' value='Agregar' id='btnAgregar'>" +                      
+                   "<input type='submit'  value='Agregar' id='btnAgregarE'>" +                      
                "</div>" +
             "</div>");
+     $("#btnAgregarE").click(function() {
+        var folioE = $("#folioE").val().trim();
+        var marcaE = $("#marcaE").val().trim();
+        var serieE = $("#serieE").val().trim();
+        var productoE = $("#productoE").val().trim();
+        var modeloE = $("#modeloE").val().trim();
+        var CostoE = $("#costoE").val().trim();
+           var url = "http://localhost/ServiTec/php/admin/insertarFolio.php";
+                
+                   var params = {folioE: folioE,
+                                marcaE: marcaE,
+                                 serieE: serieE,
+                                 productoE: productoE,
+                                 modeloE:modeloE,
+                                 CostoE: CostoE
+                                };
+                 
+                    $.post(url,params).done(function(data){
+                       var json = JSON.parse(data);  
+                    });   
+	});
     
 };
 var mostrarBusqueda = function(){

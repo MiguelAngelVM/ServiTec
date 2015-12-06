@@ -1,0 +1,15 @@
+@media(max-width: 900px){
+    
+    #divSamsumg{
+        display: none;
+    }
+    #divNew{
+       position: static;
+    }
+}
+@media(min-height: 1100px){
+  #seccion1, #seccion2{
+    min-height: 1200px;
+   
+  }
+}

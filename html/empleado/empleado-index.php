@@ -1,5 +1,5 @@
-<?php 
-include("../../php/control/sesionEmp.php"); 
+<?php
+include("../../php/control/sesionEmp.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,25 +9,16 @@ include("../../php/control/sesionEmp.php");
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="../../css/empleado/styleEmployee.css"/>
-    <link rel="stylesheet" href="../../css/pantallas/styleEmployee.css"/>
-    <link rel="stylesheet" href="../../css/estatico/estatico-principal.css"/>
-    <link rel="stylesheet" href="../../css/estatico/estatico-empleado.css"/>
-    
+
 </head>
    <body>
-       <header id="estatico">
-             <center>
-                 <div id="divLogo">
-                     <img  id="logo" class="logo1" src="../../img/1.JPG">
-                 </div>  
-                 <div id="divSamsumg">
-                     <img  id="samsumg" class="logo1" src="../../img/samsumg.png">
-                 </div> 
-                 <div id="salir-admin">
+      <header >
+
+                 <div id="salir">
                     <a href="../../php/control/salir.php">
-                    <input type="submit"   id="salir" value="Salir" class="button-submit-comment"/></a>
+                    <input type="submit"   id="salir-admin" value="Salir" class="button-submit-comment"/></a>
                  </div>
-             </center>
+             
          </header>
         <section id="contenedor">
             <div id="menu">
@@ -36,6 +27,7 @@ include("../../php/control/sesionEmp.php");
                       <li><a href="empleado-index.php"><span class="icon-home3"></span>NOTIFICACIONES</a></li>
                       <li><a    id="folio"><span class="icon-profile"></span>AGREGAR FOLIO</a></li>
                       <li><a id="busqueda"><span class="icon-home3"></span>BUSQUEDA</a></li>
+                      <li id="salir-admin"> <a href="../../php/control/salir.php"><span class="icon-user-plus"></span>SALIR</a></li>
                  </ul>
                </nav>
             </div>
@@ -48,7 +40,7 @@ include("../../php/control/sesionEmp.php");
                     <h1>Estas son las nuevas del d&iacute;a</h1>
                     <br/>
                     <div class="notificacionesClass">
-                       Jordan 
+                       Jordan
                         <div id="notificacionesId">
                             Acept&oacute; la reparaci&oacute;n
                         </div>
@@ -60,13 +52,13 @@ include("../../php/control/sesionEmp.php");
                         </div>
                     </div>
                     <div class="notificacionesClass">
-                       Antonio 
+                       Antonio
                         <div id="notificacionesId">
                             Necesita una cotizaci&oacute;n
                         </div>
                     </div>
                     <div class="notificacionesClass">
-                       Alexandro 
+                       Alexandro
                         <div id="notificacionesId">
                             Acept&oacute; la reparaci&oacute;n
                         </div>

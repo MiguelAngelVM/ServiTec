@@ -1,129 +1,111 @@
 <!DOCTYPE html>
-<html lang="es" class="no-js">
-	<head>
-        <script src="js/CuadroLogin.js"></script>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-		<title>ServiTec</title>
-		<meta name="description" content="Pagina principal de ServiTex" />
-		<meta name="author" content="Equipo de Desarrollo ServiTec" />
-		<!-- Que dispositivos se vera-->
-        <meta name="viewport" content="width=device-width,initial-scale=1"/>
-		<!-- Esto nose que pedo
-		<link rel="shortcut icon" href="../favicon.ico">-->
-		<!-- Que dispositivos se vera-->
-        <meta name="viewport" content="width=device-width,initial-scale=1"/>
-			
-		<!-- imagen icono en la barra de direcciones-->
+<html>
+<head>
+    <title>ServiTec</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pagina principal de ServiTec">
+    <!-- referecia a los dispositivos que se veran-->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <!-- imagen icono en la barra de direcciones-->
 		<link rel="icon" type="image/ico" href="img/3.ico" />
-		<!-- REFERENCIA AL MENU DE INDEX-->
-		<link rel="stylesheet" type="text/css" href="css/principal/menu1.css" />
-		<!-- REFERENCIA AL PARALLAX DEL INDEX-->
-		<link rel="stylesheet" type="text/css" href="css/principal/parallax.css "/>
-		<!-- REFERENCIA AL RESPONSIVO DE LA TABLET-->
-        <!-- REFERECIAS AL TOP DE NUESTRA PUBLICIDAD QUE CREO QUE AHORA ES BOTTOM POR CULPA DE MIGUEL-->
-       <link rel="stylesheet" type="text/css" href="css/muestra.css"/>
-        <!-- ESTO HACE REFERENCIA AL ESTILO DE FLEXSLIDER-->
-        <link rel="stylesheet" href="css/principal/flexslider.css"/>
-        <!-- estilo de el flexlider y sus imagenes-->
-        <link rel="stylesheet" href="css/principal/estilos.css"/>
-        
-        <link rel="stylesheet" href="css/pantallas/estilos.css"/>
-        <link rel="stylesheet" href="css/estatico/estatico-principal.css"/>
-        
-        <!-- DEMO UNO ESTO ES EL MENU PARA QUE FUNCIONE-->
-        <script src="js//demo1.js"></script>
-        <!-- ESTO HACE REFERENCIA ALA FUNCION DE EL MENU -->
-		<script src="js/modernizr-2.6.2.min.js"> </script>
-		<!--Manda a llamar a flexslider-->
-		 <!--Librerias -->
-	    <script src="js/jquery.min.js"></script>
-	    <script src="js/jquery.flexslider.js"></script>
-    	
-    	<script>
-            $(window).load(function(){
-                $(".flexslider").flexslider();
-            });
-        </script>
+    <!-- esto hace refencial al estilo de parallax-->
+    <link rel="stylesheet" href="css/parallax.css">
+    <!-- esto hace referencia a las imagenes que aparecen en el flexlider-->
+    <link rel="stylesheet" href="css/galeria.css">
+    <!-- esto hace referencia a flexslider que es la galeria de fotos-->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <!-- esto hace referencia a la responsividad de la pagina home (inicio)-->
+    <link rel="stylesheet" type="text/css" href="css/responsi/estilos-index.css"/>
+    <!-- REFERENCIA AL MENU DE INDEX-->
+    <link rel="stylesheet" type="text/css" href="css/menu1.css" />
+    <!--<link rel="stylesheet" type="text/css" href="css/ayuda.css">-->
+     <!-- DEMO UNO ESTO ES EL MENU PARA QUE FUNCIONE-->
+    <script src="js/demo1.js"></script>
+    <!-- ESTO HACE REFERENCIA ALA FUNCION DE EL MENU -->
+    <script src="js/modernizr-2.6.2.min.js"> </script>
 
-        <script type="text/javascript" src="js/ajax.js"></script>
-	</head>
+     <!--Librerias -->
+    <script src="js/jquery.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
 	
-      
-      <body id="cuerpo">
-       <!-- TOP NAVIGATION-->
-       <section id=margen>
-         <header id="estatico">
-            <center>
-                 <div id="divLogo">
-                     <img  id="logo" class="logo1" src="img/1.JPG">
-                 </div>  
-                 <div id="divSamsumg">
-                     <img  id="samsumg" class="logo1" src="img/samsumg.png">
-                 </div> 
-                 <div id="divNew">
 
-                        <input type="submit" name="login"  id="login" value="Logeate" class="button-submit-comment"/>
-                     <A id="registro" HREF="#registro1" class="button-submit-comment" > Registrate para ver productos</A>
-                 </div>
-             </center>
-         </header>
-            <section id="home" data-type="parallax_section" data-speed="10">
-			    
-			    <article>
-				 <section id="principal">
-				        <article id="galeria-inicio"></article>
-				        
-				        <!-- GALERIA-->
-				<div class="flexslider">
 
-	            <ul class="slides">
-                    <li>
-    	                <img src="img/1.jpg" id="galeria">
-    	                <p class="flex-caption"> Imagen 1 </p>
-                     </li>
 
-                    <li>
-                        <img src="img/2.jpg" id="galeria">	
-                        <p class="flex-caption"> Imagen 2 </p>
-                    </li>
-    
-                    <li>
-    	                <img src="img/3.jpg" id="galeria">
-    	               <p class="flex-caption"> Imagen 3 </p>
-                    </li>	
+</head>
+
+   <body >
+   
+    <section id="seccion1" data-type="parallax_section" data-speed="10">
+
+				<section id="principal">
+          <div id="Login">
+            <br>
+             <a href="#login1" >
+             <input type="submit"  id="LoginA" value="Entrar" class="button-submit-comment"/></a>
+             
+             <input type="submit"  id="ayuda" value="Ayuda" class="button-submit-comment"/>
+          </div>
+              <div id="respuesta" ></div>
+              
+    				<article id="galeria-inicio"></article>
+
+    				        <!-- GALERIA-->
+    				<div class="flexslider">
+
+                    <ul class="slides">
+                        <li>
+                            <img src="img/home/galeria/1.jpg" id="galeria">
+                            <p class="flex-caption"> Imagen 1 </p>
+                         </li>
+
+                        <li>
+                            <img src="img/home/galeria/2.jpg" id="galeria">
+                            <p class="flex-caption"> Imagen 2 </p>
+                        </li>
+
+                        <li>
+                            <img src="img/home/galeria/3.jpg" id="galeria">
+                           <p class="flex-caption"> Imagen 3 </p>
+                        </li>
                     </ul>
 
                 </div>
-				      <!-- CAPA DOS DONDE SE CIERRA LA IMAGEN-->                  
-				                    
-                    </section><!--Aqui empieza la galeria de imagenes de flexslider-->
-                    
-			    </article>
-			    </section>
-		    
-		<section id="seccion2" data-type="parallax_section" data-speed="10">
-			<article>
-				<div class="geekhome"></div>
-                <h1>Registráte Para Ver Contenido Exclusivo!</h1>
-				<div id="contenedor2">
-                    <h2> 
-                         <A NAME="registro1"></A>
-                         <div id="divView" >
-                         </div>
-                    </h2>
-                </div>
-			</article>
-			<div class="publicidad">
-				<a class="comoNavegar" href="comonavegar.html"><span>¿No sabes como navegar?</span></a>
-				<span class="right">
-				<a class="equipodedesarrollo" href=""><span>¿Quien hizo esta pagina?</span></a> </span>
-            </div>
-		</section>
+				      <!-- CAPA DOS DONDE SE CIERRA LA IMAGEN-->
 
-       <!-- Aqui esta el menu -->
-			<div class="component">
+          </section><!--Aqui empieza la galeria de imagenes de flexslider-->
+
+			    </article>
+            </div>
+        </article>
+    </section>
+
+
+
+       <!-- aqui empieza la SECCION 2 -->
+    <section id="seccion2" data-type="parallax_section" data-speed="10">
+
+        <article>
+            <div class="">
+
+                <div id="cuadroLogin">
+                    <br>
+                      <h2 id="tituloLogin">Login</h2><br>
+                    <p>Nombre</p>
+                    <input type="text" placeholder="Name..." id="user">
+                    <p>Contraseña</p>
+                    <input type="password" placeholder="Password..." id="contra">
+                    <br>
+                    <br>
+        <input type="submit" value="Entrar" id="entrar">
+                    <br>
+                    <br>
+                </div>
+                <A NAME="login1"></A>
+            </div>
+        </article>
+    </section>
+ <!--////////////////////// M E N U ////////////////////////////////////////-->
+       <div class="component">
 				<!-- Start Nav Structure -->
               <button class="cn-button" id="cn-button">MENU</button>
 				<div class="cn-wrapper" id="cn-wrapper">
@@ -138,13 +120,48 @@
 				<div id="cn-overlay" class="cn-overlay"></div>
 				<!-- End Nav Structure -->
 			</div>
-		<!-- /container -->
+
+<!-- Libreria oficial de jquery-->
         <script src="js/jquery-2.1.3.min.js"></script>
-           
-        <script src="js/CuadroLogin.js"></script>
-		<script src="js/polyfills.js"></script>
-        <script src="js/Registro/CuadroRegistro.js"></script>
-		<script src="js/demo1.js"></script>
-		</section>
-	</body>
+
+<!-- Esto nos dara el aspecto mejorado-->
+<script>
+    $(document).ready(function(){
+        $("section[data-type"parallax_section"]").each(function(){
+
+           var $bgobjeto = $(this);
+            var (window).scroll(function(){
+                $window = $(window);
+                var yPos = -($window.scrollTop() / $bgobjeto.data('speed'));
+                var coords = '50%' + yPos + 'px';
+
+                $bgobjeto.css({backgroundPosition: coords});
+            });
+        });
+    });
+
+
+</script>
+
+    <!--Manda a llamar a flexslider-->
+		 <!--Librerias -->
+	    <script src="js/jquery.min.js"></script>
+
+	    <script src="js/jquery.flexslider.js"></script>
+
+    	<script>
+            $(window).load(function(){
+                $(".flexslider").flexslider();
+            });
+        </script>
+
+        <script type="text/javascript" src="js/ajax.js"></script>
+       <!-- eSTO ES EL DESLISAMIENTO AL HACER CLICK EN MENU-->
+       <script src="js/polyfills.js"></script>
+       <script src="js/demo1.js"></script>
+       <script type="text/javascript" src="js/inicio/cuadroLogin.js"></script>
+        <script src="js/ayuda.js"></script>
+
+   </div>
+    
 </html>

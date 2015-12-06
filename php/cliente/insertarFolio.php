@@ -14,7 +14,7 @@ $serie=$_POST["serie"];
 $producto=$_POST["producto"];
 $costo=$_POST["costo"];
 
-$total = "INSERT INTO aparato (folio, marca, modelo, serie, producto) VALUES ('".$folio."','".$marca."','".$modelo."','".$serie."','".$producto."', '".$costo."')";
+$total = "INSERT INTO aparato (folio, marca, modelo, serie, producto) VALUES ('".$folio."','".$marca."','".$modelo."','".$serie."','".$producto."')";
 
 $row = mysql_query($total, $con) or die ("Error en: $total: " . mysql_error());
 

@@ -1,6 +1,6 @@
 <?php
 $con = mysql_connect('localhost', 'root','');
-       mysql_select_db('ServiTec',$con);
+       mysql_select_db('servitec',$con);
 
 if (mysql_error()) {
 echo "error";

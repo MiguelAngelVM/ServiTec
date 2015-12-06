@@ -71,7 +71,7 @@ article {
     text-align: center;
 }
 
-#notificacionesId {/* Es para el mensaje */
+.notificacionesId {/* Es para el mensaje */
     border: 1px solid;
     border-radius: 5px;
     box-shadow: 0px 0px 10px 0px #000;
@@ -80,7 +80,8 @@ article {
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 3%;
-    width: 120px;
+    width: 140px;
+    height: 120px;
 }
 
 #tituloContenedor {
@@ -128,8 +129,20 @@ h1 {
     font-weight: bolder;
     vertical-align: top;
     padding: 20px;
-    
+
 }
+#contenedorPersonal {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bolder;
+    vertical-align: top;
+    padding: 10px;
+    height:5em;
+
+
+}
+
+
 /* CONFIGURA EL TAMAÑO DE LAS CAJAS DE TEXTO ADMIN > FORMULARIOS */
 p input {
     width: 250px;
@@ -167,7 +180,7 @@ p input {
 #todo{
     position: relative;
     top: 4.3em;
-    
+
 }
 img, video{
     max-width: 100%;
@@ -241,7 +254,72 @@ img, video{
     padding-right: 15px;
     padding-top: 12px;  /* - - - - - - - - - - - - - - - -*/
 }
+
 /* - - - - - - - - - - - - - - - - - - - - - - */
+/*  C S S   P A R A   M E N Ú  LATERAL */
+#menuLateral {
+    align-content: center;
+    align-items: center;
+    display: inline-block;
+    margin-top: 9px;
+    padding: 0px;
+    max-width: 80%;
+    text-align: center;
+    padding-right: 35px;
+}
+
+#menuLateral nav {
+    border: none;
+    margin: 0px;
+    padding: 0;
+}
+
+#menuLateral nav {
+    background: none;
+    text-align: center;
+    display: inline-block;
+}
+
+#menuLateral nav ul {
+    list-style: none;
+}
+
+#menuLateral nav ul li {
+    display:inline-block;
+    position: relative;
+}
+/*aqui cambias los colores del menu*/
+#menuLateral nav ul li a {
+    background: #71aef4;
+    border: 2px solid #70a7e6;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bolder;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.38);
+    transition: .8s ease;
+    z-index 100;
+}
+
+#menuLateral nav ul li a:hover {
+    color: #000;
+    background-color: #e7ebf0;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.63);
+    transition: .5s ease;
+    transform: scale(1.1);
+}
+
+#menuLateral nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding-bottom: 12px;/* Espaciado interno de los botones menú */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 12px;  /* - - - - - - - - - - - - - - - -*/
+}
+
 
 aside {
     background: #d9d9d9;
@@ -252,4 +330,16 @@ aside {
     padding: 10px;
     width: 20%;
     height: 600px;
+}
+th {
+  width: 10em;
+}
+tbody{
+  height:3em;
+}
+#tabla1{
+  margin: 4em auto;
+}
+#campos{
+  margin-bottom:2em;
 }

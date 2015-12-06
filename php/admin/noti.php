@@ -1,29 +1,31 @@
 <?php
 $con = mysql_connect('localhost','root','');
-		mysql_select_db('ServiTec',$con);
-		
+		mysql_select_db('servitec',$con);
+
 if (mysql_error()) {
 echo "error";
 }
 
-$noti = array();
-    
-    $total ="SELECT  nombre, folio, accion FROM noti, user, aparato where user.idUsuario = noti.idUsuario and aparato.idAparato = noti.idAparato  ";
-        
+$respuesta = array();
+
+    $total ="SELECT  nombre, folio, accion, producto FROM notificaciones, user, aparato where user.idUsuario = aparato.idUsuario and aparato.idAparato = notificaciones.idAparato  ";
+
     $datos=mysql_query($total, $con);
     while ($row=mysql_fetch_array($datos)) {
        $nombre=$row['nombre'];
        $folio=$row['folio'];
        $accion=$row['accion'];
+			$producto=$row['producto'];
 
-       array_push($noti,
+       array_push($respuesta,
         $nombre,
         $folio,
-        $accion);
+        $accion,
+				$producto);
 
-        
+
     }
-  echo json_encode($noti);  
+  echo json_encode($respuesta);
 
 mysql_close($con);
 ?>

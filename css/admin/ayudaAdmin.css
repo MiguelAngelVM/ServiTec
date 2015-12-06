@@ -1,0 +1,20 @@
+#Login
+{
+    position: relative
+    width: 50px;
+    height: 50px;
+}
+#respuesta
+{
+    position:relative;
+    top: 10px;
+    height: auto;
+    width: 80%;
+    left: 235px;
+    position: relative;
+    background-color: rgba(227, 218, 218, 0.57);
+    border-radius: 1em;
+    box-shadow:  0 0 20px rgb(249, 248, 248);
+    text-align: center;
+
+}

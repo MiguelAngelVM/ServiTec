@@ -1,0 +1,37 @@
+img, video{
+max-width: 100%;
+border-radius: 0.5em;
+}
+#galeria{
+height: 470px;
+width: 1302px;
+}
+
+/*Estilos de la seccion principal y del aside*/
+section#principal{
+border-radius: 0.5em;
+position: fixed;
+width: 100%;
+padding-left: 2%;
+padding-right:2%;
+
+
+}
+
+
+/*Estilo del articulo con id galeria principal*/
+article#galeria-inicio{
+border-radius: 0.5em;
+margin: 0.5em;
+padding: 0.5em;
+text-align: content: '';
+width: 95%;
+
+}
+
+/*Bordes que tendran las imagenes en el aside*/
+aside img{
+border-radius: 0.5em;
+
+
+}

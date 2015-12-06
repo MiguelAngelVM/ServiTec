@@ -1,0 +1,31 @@
+*,#Login{
+  height:100%;
+  width:20%;
+  position:relative;
+  margin-right: 2em;
+}
+.respuesta
+{   
+    position:relative;
+    top: -40px;
+    height: auto;
+    width: 80%;
+    left: 235px;
+    position: relative;
+    background-color: rgba(227, 218, 218, 0.57);
+    border-radius: 1em;
+    box-shadow:  0 0 20px rgb(249, 248, 248);
+    text-align: center;
+    
+}
+#imputXAyuda
+{
+    float: left;
+     left: 49em;
+     top: -6px;
+    background-color: rgba(235, 70, 70, 0.18);
+    box-shadow:  0 0 20px rgb(249, 248, 248);
+    border-radius: 0.5em;
+     height: 10%;
+     width: 3%;
+}
